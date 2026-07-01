@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" class="display" readonly>
+    <div class="container">
+      <button onclick="currentvalue=''; updateDisplay()">c</button>
+      <button onclick="currentvalue=currentvalue+'1'; updateDisplay()">1</button>
+      <button onclick="currentvalue=currentvalue+'2'; updateDisplay()">2</button>
+      <button onclick="currentvalue=currentvalue+'+'; updateDisplay()">+</button>
+
+      <button onclick="currentvalue=currentvalue+'3'; updateDisplay()">3</button>
+      <button onclick="currentvalue=currentvalue+'4'; updateDisplay()">4</button>
+      <button onclick="currentvalue=currentvalue+'-'; updateDisplay()">-</button>
+
+      <button onclick="currentvalue=currentvalue+'5'; updateDisplay()">5</button>
+      <button onclick="currentvalue=currentvalue+'6'; updateDisplay()">6</button>
+      <button onclick="currentvalue=currentvalue+'*'; updateDisplay()">*</button>
+
+      <button onclick="currentvalue=currentvalue+'7'; updateDisplay()">7</button>
+      <button onclick="currentvalue=currentvalue+'8'; updateDisplay()">8</button>
+      <button onclick="currentvalue=currentvalue+'/'; updateDisplay()">/</button>
+<!-- use of eval value  -->
+     <button onclick="try { let result=eval(currentvalue); currentvalue=String(result); } catch(e) { currentvalue='error'; } updateDisplay()">=</button>
+      <button onclick="currentvalue=currentvalue+'9'; updateDisplay()">9</button>
+      <button onclick="currentvalue=currentvalue+'0'; updateDisplay()">0</button>
+      <button onclick="currentvalue=currentvalue+'.'; updateDisplay()">.</button>
+    </div>
+  </div>
+
+  <script>  
+//   importent to thinking this think then repeat all 
+    let currentvalue = '';
+    function updateDisplay() {
+      document.querySelector('.display').value = currentvalue;
+    }
+    updateDisplay();
+  </script>
+</body>
+</html>

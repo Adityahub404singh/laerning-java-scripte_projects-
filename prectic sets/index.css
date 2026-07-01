@@ -1,0 +1,22 @@
+.click_me{
+    /* background-color: aqua; */
+    color: rgb(12, 122, 122);
+    
+}
+onclick{
+    background-color: brown;
+
+}
+.bag_button{
+    background: greenyellow;
+    border-radius: 15px;
+    padding: 10px;
+    height: 35px;
+    width: 120px;
+    border: hidden;
+}
+.wishlist{
+    padding: 5px 35px;
+    border: 2px solid black;
+    border-radius: 15px;
+}

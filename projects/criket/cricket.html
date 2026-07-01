@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>cricket game</title>
+
+
+    <style>
+        .batbal{
+            font-size: 100px;
+            margin: 100px 0px 0px 200px;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            border: 1px solid black;
+             margin: 100px 0px 0px 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="batbal">bat ball stump game</div>
+    <button onclick="
+                                             // console.log('you have choosen bat') ;
+    const usermessage='you have choosebat';
+     randomnum= Math.random()*3;
+                                                                                                                                // ab humisko kahi se bhi scope kr skte hai brekets ke bahar se bhi bina let lagaye 
+    if (randomnum>0&&randomnum<=1){
+         computerchoice ='bat';
+                                                        // console.log('computer choose bat');
+    }
+    else if (randomnum>1&&randomnum<=2){ 
+    computerchoice='ball';
+    // console.log('computer choose ball');
+    }
+    else{
+    computerchoice='stump';
+            // console.log('computer choose stump');
+    }
+
+                                                              //bahar se scope kr rahe hai dekh lo agar let se difine bahar hi kr diya tb and agar var use kroge to bhi har   jaghe se kr loge lekin local difine hoga bekra hai scope nhi hoga usme //(console.log('computer choose bat');)
+
+                                                // console.log(`computer coice is //$pls no error{computerchoice}`); //
+                                        // const  computerchoicemsg=`computer coice is //${computerchoice}`#rakho ya na rakho 
+      if (computerchoice==='ball') { 
+    console.log('user won')
+    resultmsg='user won'
+    }
+    else if (computerchoice==='bat'){
+        console.log ('its a tie');
+        
+    resultmsg='match tie';
+        }
+        else if(computerchoice==='stump'){
+            
+    resultmsg='computer won'
+            console.log('computer has won');
+
+    }
+alert(`you have choosen bat.computer choice is  ${computerchoice} and${resultmsg}`);
+     ">bat</button>
+    
+
+
+<!-- ab agar repaet kr rahe ho to let remove kr do bas sahi ho jayega ?\ -->
+
+    <button onclick="
+                                                              // console.log('you have choosen bat') ;
+                                                     // const usermessage='you have choosebat';#rakho ya na rakho 
+    randomnum= Math.random()*3;
+                                                                                                                                  // ab humisko kahi se bhi scope kr skte hai brekets ke bahar se bhi bina let lagaye 
+    if (randomnum>0&&randomnum<=1){
+         computerchoice ='bat';
+                                                      // console.log('computer choose bat');
+    }
+    else if (randomnum>1&&randomnum<=2){ 
+    computerchoice='ball';
+                                                  // console.log('computer choose ball');
+    }
+    else{
+    computerchoice='stump';
+                                                  // console.log('computer choose stump');
+    }
+
+                                              //bahar se scope kr rahe hai dekh lo agar let se difine bahar hi kr diya tb and agar var use kroge to bhi har jaghe se kr loge lekin local difine hoga bekra hai scope nhi hoga usme //(console.log('computer choose bat');)
+
+                                             // console.log(`computer coice is //$pls no error{computerchoice}`); //
+                                                // const  computerchoicemsg=`computer coice is //${computerchoice}`#rakho ya na rakho
+const  computerchoicemsg=``;
+      if (computerchoice==='ball') { 
+    console.log('user won')
+    resultmsg='its tie'
+    }
+    else if (computerchoice==='bat'){
+        console.log ('computer won');
+        
+    resultmsg='computer won';
+        }
+        else if(computerchoice==='stump'){
+            
+    resultmsg='user won'
+            console.log('computer has won');
+
+        
+    }
+                                                               // you have choosen bat ko ${usermessage} #rakho ya na rakho
+alert(`you have choosen bat.computer choice is  ${computerchoice} and ${resultmsg}`);
+     ">ball</button>
+
+
+
+
+
+
+
+
+    <button onclick="
+                                            // console.log('you have choosen bat') ;
+                                           // const usermessage='you have choosebat';#rakho ya na rakho
+    randomnum= Math.random()*3;
+                                                                                                                              // ab humisko kahi se bhi scope kr skte hai brekets ke bahar se bhi bina let lagaye 
+    if (randomnum>0&&randomnum<=1){
+         computerchoice ='bat';
+                                                           // console.log('computer choose bat');
+    }
+    else if (randomnum>1&&randomnum<=2){ 
+    computerchoice='ball';
+                                                          // console.log('computer choose ball');
+    }
+    else{
+    computerchoice='stump';
+                                                     // console.log('computer choose stump');
+    }
+
+                                                           //bahar se scope kr rahe hai dekh lo agar let se difine bahar hi kr diya tb and agar var use kroge to bhi har jaghe se kr loge lekin local difine hoga bekra hai scope nhi hoga usme //(console.log('computer choose bat');)
+
+                                            // console.log(`computer coice is //$pls no error{computerchoice}`); //
+                                                                  // const  computerchoicemsg=`computer coice is //${computerchoice}` #rakho ya na rakho 
+
+      if (computerchoice==='ball') { 
+    console.log('computer won')
+    resultmsg='computer won'
+    }
+    else if (computerchoice==='bat'){
+        console.log ('user won');
+        
+    resultmsg='user won';
+        }
+        else if(computerchoice==='stump'){
+            
+    resultmsg='its a tie'
+            console.log('its a tie');
+
+    }
+alert(`you have choosen bat.computer choice is  ${computerchoice} and${resultmsg}`);
+     ">stump</button>
+</body>
+</html>
