@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="todo.css">
+  <title>Todo App</title>
+</head>
+<body>
+  <h1 id="main-heading">Todo App</h1>
+
+  <div class="grid-container">
+    <!-- // using grid-container class to make the input and button in a grid layout.  through css we will make the input and button in a grid layout. -->
+
+    <input id="todo-input" type="text" placeholder="Enter Todo here">
+    <input id="todo-date" type="date">
+    <button class='btn-todo' onclick="addTodo();">Add</button>
+     <!-- //add btn using in css  -->
+  </div>
+
+  <div class="todo-container grid-container"></div> <!-- // ye sare elements ko contain karega and then we will add the todo items in this container using javascript to show all the todo items in the container.    through new html elements we will create the todo items and then append them to the container.
+
+ -->
+
+  <script src="todo.js"></script>
+</body>
+</html>

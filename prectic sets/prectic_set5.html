@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function isodd(number){
+            let num = number % 2;
+            let isodd=num==1;
+            return isodd;
+        }
+        console.log(isodd(4))
+        console.log(isodd(3))
+
+
+        function islarge(a,b){
+            if (a>b){
+                return a;
+             } else{
+                return b;
+            }
+            return a>b?ture:false;
+        }
+        console.log(islarge(7,8))
+        function toforenheit(celsiusValue){
+            return 9/5*celsiusValue+32;
+        }
+        console.log(toforenheit(29));
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    //question one
+        // let array=[5,6]
+        // array.push(7);
+        // console.log(array);
+        // array.unshift(4);
+        // console.log(array);
+
+        //question two method using function returning the value of the array at the given position 
+
+        // function isarray(array,position){
+        //     return array[position-1];   learn it 
+        // }
+        // let array=[1,2,3,4,5,6,7,8,9];
+        // console.log(isarray(array,3));
+        // console.log(isarray(array,19));
+
+
+        //question 3 copy the array using slice method and return the copied array using function   
+//         function isarray(array){
+//             return array.slice(0,array.length);
+//         }
+//         let array=[1,2,3,4,5,6,7,8,29];
+//         array.slice(3,5); //array will be sliced from index 3 to 5
+//         console.log(array);
+//         console.log(array.slice(3,5));
+//         console.log(isarray(array));
+//         let array2=array
+// .slice(0,array.length); //array will be sliced from index 0 to length of array
+//         console.log(array2);
+//         console.log(array)
+
+//         //question 4  important question  how to check if the number is prime or not using function and while loop and break statement and count variable to count the number of prime numbers found and break the loop when the count reaches 5.    throuh while loop we can find the prime numbers and break the loop when the count reaches 5.  and also use the function to check if the number is prime or not. 
+function isprime(num){
+    for(let i=2;i<num;i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+    return true;
+console.log(isprime(7));
+}
+let n=6;
+let count=0;
+while(count<9){
+
+
+    if(isprime(n)){
+        console.log(n);
+        count++;
+        if(count==5){
+            break;
+        }
+        
+    }
+    n++;
+}
+let arr=[`aditya`,`is`,`a`,`student`];
+let str=arr.join(` `);
+console.log(str);
+    </script>
+</body>
+</html>

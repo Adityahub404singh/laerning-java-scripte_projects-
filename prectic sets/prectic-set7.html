@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Size Change</title>
+    
+    <style>
+        /* Normal button ki design */
+        .subscribe {
+            background-color: red;
+            width: 160px;
+            height: 40px;
+            color: aliceblue;
+            font-size: 30px;
+            border: 2px solid black; /* Border proper dikhne ke liye solid black diya hai */
+            border-radius: 9px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        /* Yeh class tab lagegi jab hum JS se add karenge */
+        .double-size {
+            font-size: 60px;
+            width: 320px; /* Width ko thoda bada kiya hai taaki text fit ho */
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. Without Event Listener (onclick attribute in HTML)</h2>
+    
+    <button class="subscribe button-1" onclick="setTimeout(doubleSizeWithoutEvent, 2000)">Subscribe</button>
+
+
+
+    <h2>2. With Event Listener (in JavaScript)</h2>
+    
+    <button class="subscribe button-2">Subscribe</button>
+
+
+
+    <script>
+
+        // ----------------------------------------------------
+        // LOGIC FOR METHOD 1 (Without Event Listener)
+        // ----------------------------------------------------
+        
+        // Yeh function tab call hoga jab inline onclick ka 2 second (2000ms) poora hoga
+        function doubleSizeWithoutEvent() {
+            // Button 1 ko uski class 'button-1' se dhoondha
+            let btn1 = document.querySelector('.button-1');
+            
+            // Usko 'double-size' CSS class de di
+            btn1.classList.add('double-size'); 
+        }
+
+
+        // ----------------------------------------------------
+        // LOGIC FOR METHOD 2 (With Event Listener)
+        // ----------------------------------------------------
+        
+        // Step 1: Button 2 ko uski class 'button-2' se dhoondha
+        let btn2 = document.querySelector('.button-2');
+
+        // Step 2: Ek alag function banaya jo button 2 ka size bada karega
+        function doubleSizeWithEvent() {
+            btn2.classList.add('double-size');
+        }
+
+        // Step 3: Button 2 par 'click' event listener lagaya
+        // Jab click hoga, tab ek arrow function chalega jo setTimeout ko trigger karega
+        btn2.addEventListener('click', event => {
+            
+            // 2000 milliseconds (2 second) ke baad 'doubleSizeWithEvent' function chalega
+            setTimeout(doubleSizeWithEvent, 2000); 
+            
+        });
+        //  ----------------------------------------------------------
+        // logic 5 
+        // ----------------------------------------------------------
+         let arr= [1,2,3,4,5,6,7,8,9]; // ye logic hai for only like for loop but cant be use break or continue statement in this logic.
+         let sum=0;
+         arr.forEach(function(num){//num is the current element of the array  
+            sum+=num;
+         });
+         console.log(sum);
+
+         let square=arr.map(function(num){ // ye logic is used to create a new array with the square of each element in the original array
+            return num*num;
+         });
+         console.log(square);
+    </script>
+</body>
+</html>

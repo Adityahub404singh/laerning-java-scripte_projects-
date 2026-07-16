@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num=1; // Initialization
+        // while(num<=10){ //condition
+        //     console.log(num);
+        //     num++; //update
+        // }
+        // console.log("final value of num is "+num);
+        // let x=0;while(x<=1){
+        //     x=Math.random()*2;
+        //     console.log(x);
+        // }
+        // console.log("final value of x is "+x);
+
+        // do while loop is used when we want to execute the code at least once and then check the condition. In while loop, the condition is checked first and then the code is executed. 
+        let y=0;
+        do{
+            y=Math.random()*1;
+            console.log(y);
+            y++;
+            console.log("final value of y is "+y);
+        }while(y<=1);
+        console.log("final value of y is "+y);
+    //     // for loop is used when we know the number of iterations in advance. In while loop, the number of iterations is not known in advance.     
+    // for(let num=0;num<10;num++){
+    //     console.log(num);
+
+    // }
+    // let array=[1,2,3,4,5,6,7,8,9];
+    // for(let num=0;  num<array.length;   num++){
+    //     console.log(array[num]);
+    // }
+    // accumulator kya hota hai  ek ek elemt add krna in a variable and then print the final value of that variable after the loop is completed.
+    let array2=[1,2,3,4,5,6,7,8,9];
+    let sum=0;
+    for(let num=0;  num<array2.length;   num++){
+        sum+=array2[num];
+    }
+    console.log("Sum of array2 is: "+sum);
+
+    let square=[];
+    let sum1=0;
+    for(let num=0;  num<array2.length;   num++){
+        square[num]=array2[num]*array2[num]; //updating the square array with the square of each element in array2  
+        square.push(array2[num]*array2[num]);//how push works in array? it adds the element at the end of the array same work as above and pahela element add karega and then push karega repeting the process for each element in array2  
+        sum1+=square[num]; //updating the sum1 with the sum of squares of each element in array2    
+    }
+
+    console.log("Squares of array2 are: "+square);
+    console.log("Sum of squares of array2 is: "+sum1);
+    //break statement is used to exit the loop when the condition is met. continue statement is used to skip the current iteration and move to the next iteration.
+ let arraay3=[1,2,3,4,5,6,7,8,9];
+ for(let i=0;  i<arraay3.length;   i++){
+    if(arraay3[i]===4){
+        console.log("4 is found at index "+i);
+        break; // break statement is used to exit the loop when the condition is met. 
+    }
+    console.log(arraay3[i]);
+ }
+ for(let i=0; i<=25; i++){
+    if(i%2===0){
+        continue; // continue statement is used to skip the current iteration and move to the next iteration.
+    }
+    console.log(i);
+ }
+// console.log("final value of i is "+i);
+//  ye apne aapko error dega kyuki i ka scope for loop ke andar hi hai. agar aap i ko for loop ke bahar declare karte to ye error nahi deta.
+    </script>
+</body>
+</html>
