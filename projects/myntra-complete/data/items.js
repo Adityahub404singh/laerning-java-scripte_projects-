@@ -1,7 +1,7 @@
 const items = [
     {
         id: '001',
-        item_image:`../../images/categories/9.jpg`,
+        item_image:`../../../images/categories/9.jpg`,
         company: 'Carlton London',
         item_name: 'Rhodium-Plated CZ Floral Studs',
         original_price: 1045,
@@ -16,7 +16,7 @@ const items = [
     },
     {
         id: '002',
-        item_image:`../../images/categories/8.jpg`,
+        item_image:`../../../images/categories/8.jpg`,
         company: 'CUKOO',
         item_name: 'Women Padded Halter Neck Swimming Dress',
         original_price: 2599,
@@ -31,7 +31,7 @@ const items = [
     },
     {
         id: '003',
-        item_image:`../../images/categories/7.jpg`,
+        item_image:`../../../images/categories/7.jpg`,
         company: 'NUEVOSDAMAS',
         item_name: 'Women Red & White Printed A-Line Knee-Length Skirts',
         original_price: 1599,
@@ -46,7 +46,7 @@ const items = [
     },
     {
         id: '004',
-        item_image:`../../images/categories/6.jpg`,
+        item_image:`../../../images/categories/6.jpg`,
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         original_price: 999,
@@ -61,7 +61,7 @@ const items = [
     },
     {
         id: '005',
-        item_image:`../../images/categories/5.jpg`,
+        item_image:`../../../images/categories/5.jpg`,
         company: 'Roadster',
         item_name: 'Pure Cotton T-shirt',
         original_price: 1399,
@@ -76,7 +76,7 @@ const items = [
     },
     {
         id: '006',
-        item_image:`../../images/categories/4.jpg`,
+        item_image:`../../../images/categories/4.jpg`,
         company: 'Nike',
         item_name: 'Men ReactX Running Shoes',
         original_price: 14995,
@@ -91,12 +91,14 @@ const items = [
     },
     {
         id: '007',
-        item_image:`../../images/categories/3.jpg`,
+        item_image:`../../../images/categories/3.jpg`,
         company: 'The Indian Garage Co',
         item_name: 'Men Slim Fit Regular Shorts',
         original_price: 1599,
         current_price: 639,
         discount_percentage: 60,
+        return_period: 14,
+        delivery_date: '10 Oct 2023',
         rating: {
             stars: 4.2,
             count: 388,
@@ -104,7 +106,7 @@ const items = [
     },
     {
         id: '008',
-        item_image:`../../images/categories/2.jpg`,
+        item_image:`../../../images/categories/2.jpg`,
         company: 'Nivea',
         item_name: 'Men Fresh Deodrant 150ml',
         original_price: 285,

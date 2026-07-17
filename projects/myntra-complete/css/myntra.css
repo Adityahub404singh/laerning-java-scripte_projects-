@@ -321,3 +321,11 @@ justify-content: space-evenly;
  font-weight: 700;
  cursor: pointer;
 }
+.action-container{
+    text-decoration: none;
+    
+
+}
+a.action-container:link{
+    color: black;
+}

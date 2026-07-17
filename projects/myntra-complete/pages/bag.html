@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra Clone</title>
-    <link rel="stylesheet" href="myntra.css">
+    <link rel="stylesheet" href="../css/myntra.css">
+    <link rel="stylesheet" href="../css/bag.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite,person,search,travel_luggage_and_bags" />
 </head>
 <body>
-    
     <header>
         <div class="logo-container">
-            <a href="#"><img class="logo" src="../../images/myntra.png" alt="myntra home"></a>
+            <a href="#"><img class="logo" src="../../../images/myntra.png" alt="myntra home"></a>
         </div>
-        
+
         <nav class="nav">
             <a href="#" class="main">Men</a>
             <a href="#" class="main">Women</a>
@@ -23,42 +23,36 @@
             <a href="#" class="main">Genz</a>
             <a href="#" class="main">Studio<sup class="new">New</sup></a>
         </nav>
-        
+
         <div class="search-bar">
             <span class="material-symbols-outlined search-icon">search</span>
             <input placeholder="Search for product, Brand and more" class="search-input">
         </div>
-        
+
         <div class="action-bar">
-            <div class="action-container"> 
+            <div class="action-container">
                 <span class="material-symbols-outlined">person</span>
                 <span class="action-name">Profile</span>
             </div>
-            <div class="action-container"> 
+            <div class="action-container">
                 <span class="material-symbols-outlined">favorite</span>
                 <span class="action-name">Wishlist</span>
             </div>
-            <div class="action-container"> 
+            <a class="action-container" href="bag.html">
                 <span class="material-symbols-outlined">travel_luggage_and_bags</span>
                 <span class="action-name">Bag</span>
                 <span class="bag-count">0</span>
-            </div>
+            </a>
         </div>
     </header>
 
     <main>
-        <div class="items-container">
-            <div class="item-container">
-                <img src="../../images/categories/9.jpg" alt="myntra item" class="item-image">
-                <div class="rating">4.5★|1.4k</div>
-                <div class="company-name">Carlton London</div>
-                <div class="item-name">Rhodium-plated CZ Floral Studs</div>
-                <div class="price">
-                    <span class="current-price">₹1,999</span>
-                    <span class="original-price">₹3,999</span>
-                    <span class="discount">(50% off)</span>
-                </div>
-                <button class="btn-add-Bag">Add to Bag</button>
+        <div class="bag-page">
+            <div class="bag-items-container">
+                <!-- bag items are injected here by displayBagItems() in bag.js -->
+            </div>
+            <div class="bag-summary">
+                <!-- price summary is injected here by displayBagSummary() in bag.js -->
             </div>
         </div>
     </main>
@@ -66,43 +60,44 @@
     <footer>
         <div class="footer_container">
             <div class="footer_column">
-                <h3>online shopping</h3>
+                <h3>ONLINE SHOPPING</h3>
                 <a href="#">Men</a>
                 <a href="#">Women</a>
-                <a href="#">kids</a>
-                <a href="#">home</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
                 <a href="#">Beauty</a>
-                <a href="#">Genz</a>
-                <a href="#">Gift card</a>
-                <a href="#">Myntra insider</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
             </div>
             <div class="footer_column">
-                <h3>online shopping</h3>
+                <h3>ONLINE SHOPPING</h3>
                 <a href="#">Men</a>
                 <a href="#">Women</a>
-                <a href="#">kids</a>
-                <a href="#">home</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
                 <a href="#">Beauty</a>
-                <a href="#">Genz</a>
-                <a href="#">Gift card</a>
-                <a href="#">Myntra insider</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
             </div>
             <div class="footer_column">
-                <h3>online shopping</h3>
+                <h3>ONLINE SHOPPING</h3>
                 <a href="#">Men</a>
                 <a href="#">Women</a>
-                <a href="#">kids</a>
-                <a href="#">home</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
                 <a href="#">Beauty</a>
-                <a href="#">Genz</a>
-                <a href="#">Gift card</a>
-                <a href="#">Myntra insider</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
             </div>
         </div>
         <hr>
-        <div class="copy_right">© 2026 www.myntra.com. All rights reserved.</div>
+        <div class="copyright">
+            © 2026 www.myntra.com. All rights reserved.
+        </div>
     </footer>
-    <script src="data/items.js"></script>
-    <script src="myntra.js"></script>
+
+    <script src="../data/items.js"></script>
+    <script src="../data/myntra.js"></script>
+    <script src="../data/bag.js"></script>
 </body>
 </html>
