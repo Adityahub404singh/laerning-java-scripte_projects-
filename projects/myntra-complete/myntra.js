@@ -1,21 +1,27 @@
+displayitems();
+let addtobag=[];
+function addToBag(itemsid){
+bagitem.push(itemsid)
+}
+
+function displayitems(){ 
 let itemscontainerelement = document.querySelector(".items-container");
-
-
-
-
-
-
-
-
-itemscontainerelement.innerHTML = `<div class="item-container">
-                <img src="../../images/categories/9.jpg" alt="myntra item" class="item-image">
-                <div class="rating">4.5★|1.4k</div>
-                <div class="company-name">Carlton London</div>
-                <div class="item-name">Rhodium-plated CZ Floral Studs</div>
+//object bnana
+// 
+ let innerhtml='';
+ items.forEach(items => {
+    innerhtml += `<div class="item-container"> 
+                <img src="${items.item_image}" alt="myntra item" class="item-image">
+                <div class="rating">${items.rating.stars}★|${items.rating.count}</div>
+                <div class="company-name">${items.company}</div>
+                <div class="item-name">${items.item_name}CZ Floral Studs</div>
                 <div class="price">
-                    <span class="current-price">₹1,999</span>
-                    <span class="original-price">₹3,999</span>
-                    <span class="discount">(50% off)</span>
+                    <span class="current-price">₹${items.current_price}</span>
+                    <span class="original-price">${items.original_price}</span>
+                    <span class="discount">${items.discount_percentage }%off</span>
                 </div>
-                <button class="btn-add-Bag">Add to Bag</button>
-            </div>"`
+                <button class="btn-add-Bag" onclick= "Add to bag${items.id}">Add to bag</button>
+            </div>`
+ }); 
+ itemscontainerelement.innerHTML=innerhtml;
+}

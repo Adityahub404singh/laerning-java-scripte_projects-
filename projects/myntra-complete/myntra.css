@@ -173,7 +173,7 @@ width: 100%;
     max-height: 5em;
     font-weight: 700;
 }
-.category_items{
+.category_items ,.items-container{
     display: flex;
     flex-wrap: wrap; /*inline ko or sahi se chipkana sahi images ko inline me */
 justify-content: space-evenly;
@@ -212,13 +212,14 @@ justify-content: space-evenly;
     text-align: end;
     padding: 15px;
 }
-.items-container{
+.items-container {
     width: 80%;
     margin: 40px 10%;
     margin-top: 40px ;
 }
-.item-container{
+.item-container {
     width: 250px;
+    margin: 10px;
 }
 .item-image{
     width: 100%;
@@ -303,4 +304,20 @@ justify-content: space-evenly;
     border-radius: 10px;
     width: 100%;
     margin-top: 10px;
+}
+.bag-count{
+ background-color: #f16565;   
+ white-space: nowrap;
+ text-align: center;
+ line-height:18px;
+ padding: 0 6px;
+ height:18px; 
+ position: relative;
+ border-radius: 50px;
+ font-size: 12px;
+ color:#fff;
+ left: 13ox;
+ top: -44px;
+ font-weight: 700;
+ cursor: pointer;
 }
